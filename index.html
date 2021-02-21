@@ -28,6 +28,35 @@
                     </ul>
                 </nav>
             </header>    
+            <!--This is the hero image and includes a call to action, which encourages the user to do something.-->
+            <section>
+                <div>
+                    <h3>Get Started Today</h3>
+                    <p>Fill out the form and one of our traiers will schdeule a consult</p>
+                    <form>
+                        <label for="name">Enter full name</label><!--vidual directive of what to enter and links to <input>-->
+                        <input type="text" placeholder="Your Name" name="name" id="name"/>
+                        <label for="email">Enter email</label>
+                        <input type="email" placeholder="Email Address" name="email" id="email"/>
+                        <label for="phone">Enter a telephone number</label>
+                        <input type="tel" placeholder="Phone Number" name="phone" id="phone"/>
+                        <p>
+                            Have you worked out with a trainer before?
+                            <input type="radio" name="trainer-confirm" id="trainer-yes"/>
+                            <label for="trainer-yes"> Yes</label>
+                            <input type="radio" name="trainer-no" id="trainer-no"/>
+                            <lable for="trainer-no">No</lable>
+                        </p>
+                        <p>
+                            I acknowledge that I am at least 18 years of age:
+                            <input type="checkbox" name="age-confirm" id="age-confirm"/>
+                        </p>
+                        <button type="submit">
+                            Get Running
+                        </button>
+                    </form>
+                </div>
+            </section>
             <!--Section "What We do"-->
             <section>
                 <h2>What We Do</h2>
