@@ -1,8 +1,9 @@
  *{
      margin: 0;
      padding: 0;
+     box-sizing:border-box; /*this gets rid of the issue of mixed padding values and width. Ex the header has 35px right and left which equals 70 but the footer width is at 100% making it flow off the page*/
  }
- 
+
  body {
      /*setting the color of the font for the entire page to that hexadecimal number */
      color: #39a6b2;
@@ -11,7 +12,7 @@
  
  /* Applies 20px to every side (top, right, bottom, left) */
  header {
-    padding: 20px 35 px;
+    padding: 20px 35px;
     background-color: #39a6b2;
     }
  
@@ -48,5 +49,27 @@ header h1{
     color:#fce138;
     margin: 0;
     display: inline;
+}
 
+footer{
+    background-color: #fce138;
+    width: 100%;
+    padding: 40px 35px;
+}
+
+footer h2{
+    display: inline;
+    color: #024e76;
+    font-size: 30px;
+    margin: 0;
+}
+
+footer div{ 
+    float: right;
+    line-height: 1.5;
+    text-align: right;
+}
+
+footer a{ 
+    color: #024e76;
 }
