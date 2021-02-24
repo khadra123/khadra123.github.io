@@ -148,27 +148,84 @@ section {
     font-size: 16px;
 }
 /*Hero style ends*/
+/* This below sections help prevent duplicities in your code. ex .steps h2 and .intro h2*/
+.section-title{
+    font-size: 55px;
+    color: #024e76;
+    margin-bottom: 35px;
+    padding: 0 100px 20px 100px;
+    border-bottom: 3px solid;/*this puts an underline (bottom border) under the header*/
+    display: inline-block;
+}
+
+.primary-border{
+    border-color: #fce138;
+}
+
+.secondary-border{
+    border-color: #39a6b2;
+}
 
 /* text-align puts the text into the centre and not on the right or left (similar to word)*/
 .intro{
     text-align: center;
 }
-
+/* This is replaces with section-title as it is repeated here and in .steps h2. no need to repeat code
 .intro h2{
     font-size: 55px;
     color: #024e76;
     margin-bottom: 35px;
     padding: 0 100px 20px 100px;
-    border-bottom: 3px solid; /*this puts an underline (bottom border) under the header*/
-    border-color: #fce138; /*this can be put in the border-bottom as a shorthand property if you want*/
-    display: inline-block; /*this changes it from a block element into an inline block where is occupies the same space as the content*/
-}
+    border-bottom: 3px solid; 
+    border-color: #fce138;
+    display: inline-block;
+}*/
+
 
 .intro p{
     line-height: 1.7;
     color: #39a6b2;
     width: 80%;
     font-size: 20px;
-    margin: 0 auto; /*you can use display:inline-block if you wanted but margin:0 centers a block element with a width of less than 100%*. Also auto caculates the margins for us and centres the block element accordingly/
+    margin: 0 auto; /*you can use display:inline-block if you wanted but margin:0 centers a block element with a width of less than 100%*/ 
+    /* Also auto caculates the margins for us and centres the block element accordingly*/
 }
 
+.steps{
+    text-align: center;
+    background: #fce138;
+}
+
+/*Also replaced by section-title
+.steps h2{
+    font-size: 55px;
+    color: #024e76;
+    margin-bottom: 35px;
+    padding: 0 100px 20px 100px;
+    border-bottom: 3px solid;
+    border-color: #39a6b2;
+    display: inline-block;
+}*/
+
+.steps div{
+    margin-bottom: 80px;
+}
+
+.steps img{
+    width: 15%;
+}
+
+.steps h3{
+    color: #024e76;
+    font-size: 46px;
+    margin-top: 10px;
+}
+
+.steps p{
+    color: #39a6b2;
+    font-size: 23px;
+}
+
+.steps span{
+    font-size: 38px;
+}
