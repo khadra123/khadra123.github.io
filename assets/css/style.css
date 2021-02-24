@@ -148,3 +148,27 @@ section {
     font-size: 16px;
 }
 /*Hero style ends*/
+
+/* text-align puts the text into the centre and not on the right or left (similar to word)*/
+.intro{
+    text-align: center;
+}
+
+.intro h2{
+    font-size: 55px;
+    color: #024e76;
+    margin-bottom: 35px;
+    padding: 0 100px 20px 100px;
+    border-bottom: 3px solid; /*this puts an underline (bottom border) under the header*/
+    border-color: #fce138; /*this can be put in the border-bottom as a shorthand property if you want*/
+    display: inline-block; /*this changes it from a block element into an inline block where is occupies the same space as the content*/
+}
+
+.intro p{
+    line-height: 1.7;
+    color: #39a6b2;
+    width: 80%;
+    font-size: 20px;
+    margin: 0 auto; /*you can use display:inline-block if you wanted but margin:0 centers a block element with a width of less than 100%*. Also auto caculates the margins for us and centres the block element accordingly/
+}
+
