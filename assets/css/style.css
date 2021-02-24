@@ -73,3 +73,69 @@ footer div{
 footer a{ 
     color: #024e76;
 }
+
+section {
+    padding: 60px;
+}
+
+/*Hero style css starts*/
+.hero {
+    background-image: url("../images/hero-bg.jpg");
+    height: 600px;
+    background-size:cover;
+    background-position: center;
+}
+/*Hero style css ends*/
+/*Hero form style starts*/
+.hero-form{
+    background-color: #fce138;
+    padding: 20ps;
+    width: 500px;
+    color: #024e76;
+}
+ /*that line for border is the shorthand for border-style, border-width, and border-color*/
+.hero-form{
+    border-style: solid;
+    border-width: 3px;
+    border-color: #023e76;
+    background-color: #fce138;
+    padding:20px;
+    width: 500px;
+    color: #024e76;
+    position: absolute;
+    bottom:120px;
+    right: 140px;
+}
+/* ... is just a placeholde that indicates that there's other content in the code that shouldn't be overwritten.*/
+
+.hero{
+    background-image: url("../images/hero-bg.jpg");
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    position:relative;
+}
+
+.hero-form-heading{
+    font-size: 24px;
+    margin: 0;
+}
+
+/*This makes the paragraph element in the hero form more pleasent to look read*/
+.hero-form p{
+    margin: 5px 0 15px 0;
+}
+
+.form-input{
+    border: 1px solid #024e76;
+    display: block;
+    padding: 7px 15px;
+    font-size: 16px;
+    color:#024e76;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.hero-form label{
+    margin:0 5px;
+}
