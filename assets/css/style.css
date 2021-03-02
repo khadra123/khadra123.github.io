@@ -108,6 +108,7 @@ section {
 }
 /* ... is just a placeholde that indicates that there's other content in the code that shouldn't be overwritten.*/
 
+/*homepage hero style editing*/
 .hero{
     background-image: url("../images/hero-bg.jpg");
     height: 600px;
