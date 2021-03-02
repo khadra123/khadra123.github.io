@@ -14,6 +14,9 @@
  header {
     padding: 20px 35px;
     background-color: #39a6b2;
+    display: flex;/*the flex distributes the space amoung the child elements and overrides the block-level behaviours of the elements*/
+    justify-content: space-between; /*this puts all of the unused space in the header value betwn the two elements (nav and h1) and determines the unsued spave by adding up the border-width, margin, padding and content of each child element and if deosn't equal 100% then whatever is left over is considered unused*/
+    flex-wrap: wrap; /*instructs the container to let chid elements break onto the next line when they don't fit on one line*/
     }
  
 header h1 {
@@ -29,7 +32,6 @@ header a {
 }
 
 header nav{
-    float:right;
     margin: 7px 0;
 }
 
@@ -48,7 +50,6 @@ header h1{
     font-size: 36px;
     color:#fce138;
     margin: 0;
-    display: inline;
 }
 
 footer{
