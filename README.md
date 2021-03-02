@@ -1,8 +1,5 @@
 # khadra123.github.io
 
-<<<<<<< HEAD
-# Run Buddy
-=======
 # Run Buddy
 
 ## Purpose
@@ -19,4 +16,3 @@ file:///C:/Users/Khadra/Desktop/projects/run-buddy/index.html
 Made by Khadra Mohamed
 
 ### @2021 Run Buddy, Inc
->>>>>>> 33b593b3b7313dcc1f35d45e148191839bd4771d
