@@ -56,6 +56,7 @@ header h1{
     margin: 0;
 }
 
+/* Footer styles start*/
 footer{
     background-color: #fce138;
     width: 100%;
@@ -80,6 +81,9 @@ footer a{
     color: #024e76;
 }
 
+/*footer style ends*/
+
+/*style section tags*/
 section {
     padding: 60px;
 }
@@ -87,11 +91,14 @@ section {
 /*Hero style css starts*/
 .hero {
     background-image: url("../images/hero-bg.jpg");
-    height: 600px;
     background-size:cover;
     background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 /*Hero style css ends*/
+
 /*Hero form style starts*/
 .hero-form{
     background-color: #fce138;
@@ -109,18 +116,6 @@ section {
     position: absolute;
     margin: 3.5%;
     width: 40%;
-  
-}
-/* ... is just a placeholde that indicates that there's other content in the code that shouldn't be overwritten.*/
-
-/*homepage hero style editing*/
-.hero{
-    background-image: url("../images/hero-bg.jpg");
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
 }
 
 .hero-cta{
@@ -137,6 +132,7 @@ section {
     font-size: 55px;
     color: #fce138;
 }
+/* ... is just a placeholde that indicates that there's other content in the code that shouldn't be overwritten.*/
 
 .hero-form-heading{
     font-size: 24px;
@@ -170,14 +166,16 @@ section {
     font-size: 16px;
 }
 /*Hero style ends*/
+
 /* This below sections help prevent duplicities in your code. ex .steps h2 and .intro h2*/
 .section-title{
     font-size: 55px;
     color: #024e76;
-    margin-bottom: 35px;
-    padding: 0 100px 20px 100px;
     border-bottom: 3px solid;/*this puts an underline (bottom border) under the header*/
-    display: inline-block;
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 0 auto 35px auto;
+    width: 50%;
 }
 
 .primary-border{
@@ -188,10 +186,9 @@ section {
     border-color: #39a6b2;
 }
 
+
 /* text-align puts the text into the centre and not on the right or left (similar to word)*/
-.intro{
-    text-align: center;
-}
+
 /* This is replaces with section-title as it is repeated here and in .steps h2. no need to repeat code
 .intro h2{
     font-size: 55px;
@@ -211,10 +208,10 @@ section {
     font-size: 20px;
     margin: 0 auto; /*you can use display:inline-block if you wanted but margin:0 centers a block element with a width of less than 100%*/ 
     /* Also auto caculates the margins for us and centres the block element accordingly*/
+    text-align: center;
 }
 
 .steps{
-    text-align: center;
     background: #fce138;
 }
 
@@ -300,7 +297,6 @@ section {
 
 .contact {
     background-color: #023e76;
-    text-align: center;
 }
 
 .contact h2{
@@ -336,3 +332,7 @@ section {
 .contact-info a{
     color: #fce138;
 } 
+
+.flex-row {
+    display: flex;
+}
