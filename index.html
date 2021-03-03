@@ -38,7 +38,7 @@
                     </p>
                 </div>
                 <div class="hero-form">
-                    <h3 class="hero-form-heading">Get Started Today</h3>
+                    <h3>Get Started Today</h3>
                     <p>Fill out the form and one of our trainers will schedule a consult</p>
                     <form >
                         <label for="name">Enter full name</label><!--vidual directive of what to enter and links to <input>-->
@@ -55,7 +55,9 @@
                             <label for="trainer-no">No</label>
                         </p>
                         <p>
-                            I acknowledge that I am at least 18 years of age:
+                            <label for="checkbox">
+                                I acknowledge that I am at least 18 years of age:
+                            </label>    
                             <input type="checkbox" name="age-confirm" id="age-confirm"/>
                         </p>
                         <button type="submit">
@@ -64,6 +66,7 @@
                     </form>
                 </div>
             </section>
+            
             <!--Section "What We do"-->
             <section id="what-we-do" class="intro">
                 <div class="flex-row">
@@ -138,43 +141,50 @@
             </section>
 
             <!--Section "Meet the Trainers"-->
-            <section id="your-trainers" class="trainers">
+            <section id="your-trainers">
+
                 <div class="flex-row">
                     <h2 class="section-title primary-border">Meet The Trainers</h2>
                 </div>
-                <article class="trainer"><!--the article tag used here is to encapsulate the content of a single trainers to when a screem reader reads the section it will infer that all of this content is related-->
-                    <img src="./assets/images/trainer-1.jpg" alt="Arron Stephens in his workout clothes, ready to pump iron"/><!--the alt must be described in less than 140 characters, convey the content and purpose of the image and should not begin with image of or graph of as that is already provided by the screen reader-->
-                    <div class="trainer-bio text-left">
-                        <h3>Arron Stephens</h3>
-                        <h4>Speed/Strenght</h4>
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi neque animi quo cupiditate commodi saepe culpa sed
-                            itaque velit maiores optio dolorem excepturi aperiam dolores, voluptatibus suscipit amet quis repellat!
-                        </p>
-                    </div>
-                </article>
-                <article class="trainer"><!--the article tag used here is to encapsulate the content of a single trainers to when a screem reader reads the section it will infer that all of this content is related-->
-                    <div class="trainer-bio text-right">
-                        <h3>Joanna Gill</h3>
-                        <h4>Endurance</h4>
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi neque animi quo cupiditate commodi saepe culpa sed
-                            itaque velit maiores optio dolorem excepturi aperiam dolores, voluptatibus suscipit amet quis repellat!
-                        </p>
-                    </div>
-                    <img src="./assets/images/trainer-2.jpg" alt="Joanna Gill cooling off after a workout"/><!--we put this after the text so that it shifts to the right-->
-                </article>
-                <article class="trainer"><!--the article tag used here is to encapsulate the content of a single trainers to when a screem reader reads the section it will infer that all of this content is related-->
-                    <img src="./assets/images/trainer-3.jpg" alt="Harry smith wearing a headband and lifting comically small pink weights"/><!--the alt must be described in less than 140 characters, convey the content and purpose of the image and should not begin with image of or graph of as that is already provided by the screen reader-->
-                    <div class="trainer-bio text-left">
-                        <h3>Harry "the Headband" Smith</h3>
-                        <h4>Strenght</h4>
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi neque animi quo cupiditate commodi saepe culpa sed
-                            itaque velit maiores optio dolorem excepturi aperiam dolores, voluptatibus suscipit amet quis repellat!
-                        </p>
-                    </div>
-                </article>
+                
+                <div class="trainers">
+                    <article class="trainer"><!--the article tag used here is to encapsulate the content of a single trainers to when a screem reader reads the section it will infer that all of this content is related-->
+                        <img src="./assets/images/trainer-1.jpg" alt="Arron Stephens in his workout clothes, ready to pump iron"/><!--the alt must be described in less than 140 characters, convey the content and purpose of the image and should not begin with image of or graph of as that is already provided by the screen reader-->
+                        <div class="trainer-bio">
+                            <h3 class="trainer-name">Arron Stephens</h3>
+                            <h4 class="trainer-role">Speed/Strenght</h4>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi neque animi quo cupiditate commodi saepe culpa sed
+                                itaque velit maiores optio dolorem excepturi aperiam dolores, voluptatibus suscipit amet quis repellat!
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="trainer"><!--the article tag used here is to encapsulate the content of a single trainers to when a screem reader reads the section it will infer that all of this content is related-->
+                        <img src="./assets/images/trainer-2.jpg" alt="Joanna Gill cooling off after a workout"/>
+                        <div class="trainer-bio">
+                            <h3 class="trainer-name">Joanna Gill</h3>
+                            <h4 class="trainer-role">Endurance</h4>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi neque animi quo cupiditate commodi saepe culpa sed
+                                itaque velit maiores optio dolorem excepturi aperiam dolores, voluptatibus suscipit amet quis repellat!
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="trainer"><!--the article tag used here is to encapsulate the content of a single trainers to when a screem reader reads the section it will infer that all of this content is related-->
+                        <img src="./assets/images/trainer-3.jpg" alt="Harry smith wearing a headband and lifting comically small pink weights"/><!--the alt must be described in less than 140 characters, convey the content and purpose of the image and should not begin with image of or graph of as that is already provided by the screen reader-->
+                        <div class="trainer-bio">
+                            <h3 class="trainer-name">Harry "the Headband" Smith</h3>
+                            <h4 class="trainer-role">Strenght</h4>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi neque animi quo cupiditate commodi saepe culpa sed
+                                itaque velit maiores optio dolorem excepturi aperiam dolores, voluptatibus suscipit amet quis repellat!
+                            </p>
+                        </div>
+                    </article>
+                </div>    
+
             </section>
             <!--Section "Reach Out"-->
             <section id="reach-out" class="contact">
