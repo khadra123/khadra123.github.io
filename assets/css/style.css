@@ -107,7 +107,6 @@ section {
     border-color: #023e76;
     background-color: #fce138;
     color: #024e76;
-    position: absolute;
     margin: 3.5%;
     width: 40%;
 }
@@ -126,7 +125,6 @@ section {
     font-size: 55px;
     color: #fce138;
 }
-/* ... is just a placeholde that indicates that there's other content in the code that shouldn't be overwritten.*/
 
 .hero-form-heading{
     font-size: 24px;
