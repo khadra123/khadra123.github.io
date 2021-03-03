@@ -35,14 +35,18 @@ header nav{
     margin: 7px 0;
 }
 
-header nav ul li{
-    display: inline;
+header nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;/* horizontally centers the content; follows the main axis*/
+    align-items: center; /* vertically centers the content; follows the cross axis*/
+    list-style: none;/*sets how a listitems is styles and positioned; aka the actual browser window size. So by added 1.55 we are telling the browswe that the font's size should be roughly 1.55% of the window's overall width. This means that if the browser size changes thnthe size will change relative to the new overall width.*/
 }
 
 header nav ul li a{
     margin: 0 30px;
     font-weight: lighter;
-    font-size: 22px;
+    font-size: 1.55vs;/*vw=is a unit of measurement that stands for viewport width*/
 }
 
 header h1{
@@ -315,4 +319,4 @@ section {
 
 .contact-info a{
     color: #fce138;
-}
+} 
