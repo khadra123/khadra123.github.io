@@ -57,6 +57,13 @@ header nav ul li a{
     font-size: 1.55vs;/*vw=is a unit of measurement that stands for viewport width*/
 }
 
+header nav ul li a:hover{
+    background: #fce138;
+    color: #024e76;
+    border-radius: 15px;
+    text-shadow: none;
+}
+
 header h1{
     font-weight: bold;
     font-size: 36px;
@@ -167,6 +174,10 @@ section {
     border: none;
     padding: 10px 20px;
     font-size: 16px;
+}
+
+.hero-form button:hover{
+    background-color: #39a6b2;
 }
 /*Hero style ends*/
 
@@ -365,6 +376,11 @@ section {
     text-align: center;
     padding: 15 px 0;
     font-size: 16px;
+}
+
+.contact-form button:hover{
+    color: #fce138;
+    background: #39a6b2;
 }
 
 /*ADDING ASTHETICS*/
