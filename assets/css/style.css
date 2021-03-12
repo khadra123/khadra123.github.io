@@ -162,6 +162,12 @@ section {
     color:#024e76;
     width: 100%;
     margin-bottom: 15px;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+.form-input:focus{
+    background-color: rgba(255, 255, 255, 1);
+    outline: none;/*Removes the border defaulted added making an extra rec*/
 }
 
 .hero-form label{
@@ -238,11 +244,14 @@ section {
     margin: 50px;
     padding-bottom: 50px;
     width: 80%;
-    border-bottom: 1px solid #39a6b2;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+}
+
+.step:not(:last-child){
+    border-bottom: 1px solid #39a6b2;/*Applies a bottom border to all the step childs except the last one*/
 }
 
 .step-info{
@@ -366,8 +375,13 @@ section {
     width: 100%;
     margin-bottom: 15px;
     margin-top: 5px;
+    background-color: rgba(255, 255, 255, 0.75);
 }
 
+.contact-form input:focus, .contact-form textarea:focus{
+    background-color: rgba(255, 255, 255, 1);
+    outline: none;
+}
 .contact-form button{
     width: 100%;
     border: none;
