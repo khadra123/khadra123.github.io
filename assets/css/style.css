@@ -17,6 +17,14 @@
     display: flex;/*the flex distributes the space amoung the child elements and overrides the block-level behaviours of the elements*/
     justify-content: space-between; /*this puts all of the unused space in the header value betwn the two elements (nav and h1) and determines the unsued spave by adding up the border-width, margin, padding and content of each child element and if deosn't equal 100% then whatever is left over is considered unused*/
     flex-wrap: wrap; /*instructs the container to let chid elements break onto the next line when they don't fit on one line*/
+    position:-webkit-sticky;/*Vendor prefix for safari in this case and it comes first before the standardized sticky version*/
+    position: sticky;/*Sticks the header so that it scrolls with the page*/
+    top: 0;
+    background-image: url("../images/hero-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;/*This and background position below are also in the .hero section and allow the image to be placed in the same place*/
+    background-position: 80%;
     }
  
 header h1 {
@@ -97,6 +105,8 @@ section {
     justify-content: center;
     flex-wrap: wrap;
     align-items: flex-start;
+    background-position: 80%;
+    background-attachment: fixed;
 }
 /*Hero style css ends*/
 
@@ -357,11 +367,52 @@ section {
     font-size: 16px;
 }
 
+/*ADDING ASTHETICS*/
+
+header h1 {
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header nav ul li a{
+    text-shadow: rgba(0, 0, 0, 0.5);
+}
+
+.hero-cta h2{
+    text-shadow: rgba(0, 0, 0, 0.5);
+
+}
+
+.hero-form {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 56, 0.8);
+    border-radius: 15px;
+}
+
+.form-input{
+    border-radius: 15px;
+}
+
+.hero-form button{
+    border-radius: 15px;
+}
+
+.contact-form input, .contact-form textarea{
+    border-radius: 15px;
+}
+
+.contact-form button{
+    border-radius: 15px;
+}
+
+
+
+
 
 @media screen and (max-width: 980px) {
     header {
         padding-bottom: 0;
         justify-content: center;
+        position: relative;/*Removes sticky features of header for mobile or smaller screens. Allows for better user experience */
       }
     
       header h1 {
